@@ -18,6 +18,7 @@ uvicorn main:app --reload
 ```
 
 example call would be:
+Required Query Strings are width and name. If you don't pass height, it will return a square image that is the same height as the width you specify.
 ```html
 <img src="http://localhost:8000/img/?width=800&height=600&name='placeholder image'" />
 
