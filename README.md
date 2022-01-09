@@ -7,7 +7,7 @@ Clone the repo:
 ```sh
 git clone https://github.com/dbeidle/image_placeholder.git
 ```
-
+Install the packages:
 ```sh
 pip -r pip install -r requirements.txt
 ```
