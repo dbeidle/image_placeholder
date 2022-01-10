@@ -1,3 +1,4 @@
+import uvicorn
 import os
 from fastapi import FastAPI
 from fastapi.middleware import Middleware
@@ -36,3 +37,6 @@ async def img( background_tasks: BackgroundTasks, width: int, name: str, height:
         background_tasks.add_task(remove_file, path=f'temp/{n}.jpeg')
         return FileResponse(a)
 
+
+if __name__ == "__main__":
+    uvicorn.run("main:app", host="127.0.0.1", port=5610)
